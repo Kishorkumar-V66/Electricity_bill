@@ -158,11 +158,16 @@ with col2:
         company_encoder.classes_
     )
 
-    monthlyhours=st.number_input(
-        "Total Monthly Hours",
-        min_value=0.0,
-        value=500.0
-    )
+    monthlyhours = (
+    fan +
+    refrigerator +
+    airconditioner +
+    television +
+    monitor +
+    motorpump
+)
+
+st.info(f"📊 Total Monthly Hours (Auto Calculated): {monthlyhours:.2f} hrs")
 
 tariffrate=st.number_input(
     "Tariff Rate (₹/Unit)",
